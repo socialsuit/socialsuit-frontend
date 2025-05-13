@@ -18,6 +18,13 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden py-20 md:py-32">
+      <div className="absolute top-4 left-4 z-50">
+        <img
+          src="/logo.jpg"
+          alt="Social Suit Logo"
+          className="w-10 h-10 rounded-md"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
       <div className="container relative mx-auto px-4">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
