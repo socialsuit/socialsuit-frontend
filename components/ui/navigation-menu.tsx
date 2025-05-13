@@ -34,9 +34,23 @@ const NavigationMenuList = React.forwardRef<
       className
     )}
     {...props}
-  />
-))
-NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
+  >
+    <NavigationMenuLogo /> 
+    {props.children}
+  </NavigationMenuPrimitive.List>
+));
+
+const NavigationMenuLogo = () => (
+  <NavigationMenuItem className="mr-4">
+    <a href="/">
+      <img 
+        src="/logo.png" 
+        alt="Social Suit Logo" 
+        className="h-8 w-auto" 
+      />
+    </a>
+  </NavigationMenuItem>
+);
 
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
