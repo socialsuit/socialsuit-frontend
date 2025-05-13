@@ -44,7 +44,7 @@ const NavigationMenuLogo = () => (
   <NavigationMenuItem className="mr-4">
     <a href="/">
       <img 
-        src="/logo.png" 
+        src="/logo.jpg" 
         alt="Social Suit Logo" 
         className="h-8 w-auto" 
       />
