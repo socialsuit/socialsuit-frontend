@@ -27,11 +27,6 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="flex flex-col gap-6"
           >
-            <img
-              src="/logo.jpg"
-              alt="Social Suit Logo"
-              className="w-20 h-20 rounded-md"
-            />
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm text-gray-700 shadow-sm dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300">
               <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
               <span>New AI Features Released</span>
