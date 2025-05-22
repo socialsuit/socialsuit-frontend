@@ -55,7 +55,6 @@ const NavigationMenuTrigger = React.forwardRef<
   >
     {children}{" "}
     <img src="/mylogo.jpg" alt="Social Suit Logo" className="mr-2 h-6 w-6" />
-      aria-hidden="true"
   </NavigationMenuPrimitive.Trigger>
 ));
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
