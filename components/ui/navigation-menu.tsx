@@ -53,7 +53,6 @@ const NavigationMenuTrigger = React.forwardRef<
     className={cn(navigationMenuTriggerStyle(), "group", className)}
     {...props}
   >
-    {children}{" "}
     <img src="/mylogo.jpg" alt="Social Suit Logo" className="mr-2 h-6 w-6" />
   </NavigationMenuPrimitive.Trigger>
 ));
