@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { cva } from "class-variance-authority";
-import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -17,9 +16,7 @@ const NavigationMenu = React.forwardRef<
     )}
     {...props}
   >
-    <NavigationMenuList>
     {children}
-      </NavigationMenuList>
     <NavigationMenuViewport />
   </NavigationMenuPrimitive.Root>
 ));
@@ -37,18 +34,9 @@ const NavigationMenuList = React.forwardRef<
     )}
     {...props}
   >
-    <NavigationMenuLogo />
     {props.children}
   </NavigationMenuPrimitive.List>
 ));
-
-const NavigationMenuLogo = () => (
-  <NavigationMenuItem className="mr-4">
-    <a href="/">
-      <img src="/mylogo.jpg" alt="Social Suit Logo" className="h-8 w-auto" />
-    </a>
-  </NavigationMenuItem>
-);
 
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
@@ -66,10 +54,8 @@ const NavigationMenuTrigger = React.forwardRef<
     {...props}
   >
     {children}{" "}
-    <ChevronDown
-      className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+    <img src="/mylogo.jpg" alt="Social Suit Logo" className="mr-2 h-6 w-6" />
       aria-hidden="true"
-    />
   </NavigationMenuPrimitive.Trigger>
 ));
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
