@@ -17,7 +17,9 @@ const NavigationMenu = React.forwardRef<
     )}
     {...props}
   >
+    <NavigationMenuList>
     {children}
+      </NavigationMenuList>
     <NavigationMenuViewport />
   </NavigationMenuPrimitive.Root>
 ));
@@ -43,11 +45,7 @@ const NavigationMenuList = React.forwardRef<
 const NavigationMenuLogo = () => (
   <NavigationMenuItem className="mr-4">
     <a href="/">
-      <img 
-        src="/mylogo.jpg" 
-        alt="Social Suit Logo" 
-        className="h-8 w-auto" 
-      />
+      <img src="/mylogo.jpg" alt="Social Suit Logo" className="h-8 w-auto" />
     </a>
   </NavigationMenuItem>
 );
