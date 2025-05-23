@@ -1,11 +1,11 @@
-import Hero from "@/components/hero"
-import Features from "@/components/features"
-import Testimonials from "@/components/testimonials"
-import Pricing from "@/components/pricing"
-import DashboardPreview from "@/components/dashboard-preview"
-import Faq from "@/components/faq"
-import Footer from "@/components/footer"
-import ThemeToggle from "@/components/theme-toggle"
+import Hero from "@/components/hero";
+import Features from "@/components/features";
+import Testimonials from "@/components/testimonials";
+import Pricing from "@/components/pricing";
+import DashboardPreview from "@/components/dashboard-preview";
+import Faq from "@/components/faq";
+import Footer from "@/components/footer";
+import ThemeToggle from "@/components/theme-toggle";
 
 export default function Home() {
   return (
@@ -29,7 +29,9 @@ export default function Home() {
             <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" />
             <path d="M7 7h.01" />
           </svg>
-          <span className="text-xl font-bold text-gray-900 dark:text-white">Social Suit</span>
+          <span className="text-xl font-bold text-gray-900 dark:text-white">
+            Social Suit
+          </span>
         </div>
         <nav className="hidden md:flex items-center gap-6">
           <a
@@ -72,7 +74,7 @@ export default function Home() {
           </a>
           <a
             href="#"
-            className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary"
+            className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white dark:text-black shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary"
           >
             Get Started
           </a>
@@ -90,5 +92,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
