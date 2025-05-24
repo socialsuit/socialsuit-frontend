@@ -1,3 +1,4 @@
+"use client";
 import Hero from "@/components/hero";
 import Features from "@/components/features";
 import Testimonials from "@/components/testimonials";
@@ -6,8 +7,11 @@ import DashboardPreview from "@/components/dashboard-preview";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
 import ThemeToggle from "@/components/theme-toggle";
+import { useState } from "react";
+import LoginModal from "@/components/LoginModal";
 
 export default function Home() {
+  const [showLoginModal, setShowLoginModal] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
       <div className="fixed top-4 right-4 z-50">
@@ -67,8 +71,8 @@ export default function Home() {
         </nav>
         <div className="flex items-center gap-3">
           <a
-            href="#"
-            className="hidden md:inline-flex text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            onClick={() => setShowLoginModal(true)}  // Opening modal on click
+            className="hidden md:inline-flex text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary cursor-pointer"
           >
             Sign in
           </a>
@@ -78,6 +82,7 @@ export default function Home() {
           >
             Get Started
           </a>
+          {showLoginModal && <LoginModal onClose={() => setShowLoginModal(false)} />}
         </div>
       </header>
 
